@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.mobilefinalproject.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_weight_loss"
+        android:name="com.example.mobilefinalproject.ui.weightloss.WeightLossFragment"
+        android:label="@string/menu_weight_loss"
+        tools:layout="@layout/fragment_weight_loss" />
+
+    <fragment
+        android:id="@+id/nav_workout_logging"
+        android:name="com.example.mobilefinalproject.ui.workout.WorkoutLoggingFragment"
+        android:label="@string/menu_workout_logging"
+        tools:layout="@layout/fragment_workout_logging" />
+
+    <fragment
+        android:id="@+id/nav_strength_progression"
+        android:name="com.example.mobilefinalproject.ui.strength.StrengthProgressionFragment"
+        android:label="@string/menu_strength_progression"
+        tools:layout="@layout/fragment_strength_progression" />
+</navigation>

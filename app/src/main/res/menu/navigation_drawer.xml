@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_camera_black_24dp"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_weight_loss"
+            android:icon="@drawable/ic_gallery_black_24dp"
+            android:title="@string/menu_weight_loss" />
+        <item
+            android:id="@+id/nav_workout_logging"
+            android:icon="@drawable/ic_slideshow_black_24dp"
+            android:title="@string/menu_workout_logging" />
+        <item
+            android:id="@+id/nav_strength_progression"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="@string/menu_strength_progression" />
+    </group>
+</menu>
