@@ -8,8 +8,15 @@
     <fragment
         android:id="@+id/nav_dashboard"
         android:name="com.example.mobilefinalproject.ui.dashboard.DashboardFragment"
-        android:label="@string/menu_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/dashboard_title"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboard_to_strength"
+            app:destination="@id/nav_strength_training" />
+        <action
+            android:id="@+id/action_dashboard_to_calories"
+            app:destination="@id/nav_weight_loss" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_weight_loss"
@@ -28,4 +35,6 @@
         android:name="com.example.mobilefinalproject.ui.strength.StrengthProgressionFragment"
         android:label="@string/menu_strength_progression"
         tools:layout="@layout/fragment_strength_progression" />
+
+    <include app:graph="@navigation/strength_navigation" />
 </navigation>

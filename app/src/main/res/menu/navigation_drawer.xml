@@ -13,6 +13,10 @@
             android:icon="@drawable/ic_gallery_black_24dp"
             android:title="@string/menu_weight_loss" />
         <item
+            android:id="@id/nav_strength_training"
+            android:icon="@drawable/strength_training_icon"
+            android:title="@string/strength_training_title" />
+        <item
             android:id="@+id/nav_workout_logging"
             android:icon="@drawable/ic_slideshow_black_24dp"
             android:title="@string/menu_workout_logging" />

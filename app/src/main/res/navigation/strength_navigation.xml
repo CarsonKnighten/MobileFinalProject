@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_strength_training"
+    app:startDestination="@id/strength_home">
+
+    <fragment
+        android:id="@+id/strength_home"
+        android:name="com.example.mobilefinalproject.strength.ui.StrengthHomeFragment"
+        android:label="@string/strength_training_title" />
+    <fragment
+        android:id="@+id/strength_active_workout"
+        android:name="com.example.mobilefinalproject.strength.ui.ActiveWorkoutFragment"
+        android:label="Active Workout" />
+    <fragment
+        android:id="@+id/strength_routines"
+        android:name="com.example.mobilefinalproject.strength.ui.RoutineListFragment"
+        android:label="My Routines" />
+    <fragment
+        android:id="@+id/strength_routine_detail"
+        android:name="com.example.mobilefinalproject.strength.ui.RoutineDetailFragment"
+        android:label="Routine Details">
+        <argument android:name="id" app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/strength_routine_editor"
+        android:name="com.example.mobilefinalproject.strength.ui.RoutineEditorFragment"
+        android:label="Edit Routine" />
+    <fragment
+        android:id="@+id/strength_history"
+        android:name="com.example.mobilefinalproject.strength.ui.WorkoutHistoryFragment"
+        android:label="Workout History" />
+    <fragment
+        android:id="@+id/strength_workout_detail"
+        android:name="com.example.mobilefinalproject.strength.ui.WorkoutDetailFragment"
+        android:label="Workout Details">
+        <argument android:name="id" app:argType="string" />
+        <argument android:name="summary" android:defaultValue="false" app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/strength_progress"
+        android:name="com.example.mobilefinalproject.strength.ui.ProgressFragment"
+        android:label="Strength Progress" />
+</navigation>

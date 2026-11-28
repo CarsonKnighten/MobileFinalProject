@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login_title">Sign in</string>
+    <string name="login_hint">Sign in with the email and password you used on this device.</string>
+    <string name="login_register_title">Create account</string>
+    <string name="login_register_hint">Accounts are stored on this device. The first account keeps any workouts already saved here.</string>
+    <string name="login_back_to_sign_in">Back to sign in</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_confirm_password">Confirm password</string>
+    <string name="login_password_help">Use 8–128 characters.</string>
+    <string name="login_invalid_email">Enter a valid email address.</string>
+    <string name="login_enter_password">Enter your password.</string>
+    <string name="login_password_mismatch">The passwords do not match.</string>
+    <string name="login_email_exists">An account with this email already exists on this device.</string>
+    <string name="login_wrong_credentials">The email or password is incorrect.</string>
+    <string name="login_storage_error">Couldn’t open local accounts. Try again.</string>
+    <string name="login_signing_in">Signing in…</string>
+    <string name="login_creating">Creating your account…</string>
+    <string name="dashboard_title">Main Dashboard</string>
+    <string name="dashboard_calorie_tracking">Calorie Tracking</string>
+    <string name="dashboard_signed_in_as">Signed in as %1$s</string>
+    <string name="dashboard_sign_out">Sign out</string>
+</resources>

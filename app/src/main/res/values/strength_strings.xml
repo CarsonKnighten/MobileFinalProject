@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="strength_training_title">Strength Training</string>
+    <string name="strength_save_workout">Save Workout</string>
+    <string name="rest_running_channel">Active rest timer</string>
+    <string name="rest_finished_channel">Rest timer alerts</string>
+    <string name="rest_running_title">Rest timer running</string>
+    <string name="rest_finished_title">Rest complete</string>
+    <string name="rest_finished_text">Ready for your next set.</string>
+</resources>
