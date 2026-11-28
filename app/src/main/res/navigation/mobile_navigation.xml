@@ -24,17 +24,5 @@
         android:label="@string/menu_weight_loss"
         tools:layout="@layout/fragment_weight_loss" />
 
-    <fragment
-        android:id="@+id/nav_workout_logging"
-        android:name="com.example.mobilefinalproject.ui.workout.WorkoutLoggingFragment"
-        android:label="@string/menu_workout_logging"
-        tools:layout="@layout/fragment_workout_logging" />
-
-    <fragment
-        android:id="@+id/nav_strength_progression"
-        android:name="com.example.mobilefinalproject.ui.strength.StrengthProgressionFragment"
-        android:label="@string/menu_strength_progression"
-        tools:layout="@layout/fragment_strength_progression" />
-
     <include app:graph="@navigation/strength_navigation" />
 </navigation>

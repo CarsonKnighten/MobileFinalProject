@@ -9,8 +9,6 @@
 
     <string name="menu_dashboard">Dashboard</string>
     <string name="menu_weight_loss">Weight &amp; Calories</string>
-    <string name="menu_workout_logging">Workout Logging</string>
-    <string name="menu_strength_progression">Strength Progression</string>
     <string name="menu_settings">Settings</string>
 
     <string name="lorem_ipsum_title">Lorem Ipsum"</string>

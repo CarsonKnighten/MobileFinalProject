@@ -9,7 +9,6 @@ import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.closeSoftKeyboard
 import androidx.test.espresso.action.ViewActions.replaceText
 import androidx.test.espresso.action.ViewActions.scrollTo
-import androidx.test.espresso.assertion.ViewAssertions.doesNotExist
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.RootMatchers.isDialog
 import androidx.test.espresso.matcher.ViewMatchers.isDisplayed
@@ -28,7 +27,9 @@ import com.example.mobilefinalproject.strength.data.strengthDatabaseName
 import com.example.mobilefinalproject.strength.domain.WorkoutExercise
 import com.example.mobilefinalproject.strength.domain.WorkoutSession
 import com.example.mobilefinalproject.strength.domain.WorkoutSet
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import org.hamcrest.Matchers.containsString
+import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import java.text.NumberFormat
@@ -163,10 +164,16 @@ class StrengthFlowTest {
     }
 
     @Test
-    fun phoneNavigationOpensRemainingDestinations() {
+    fun phoneNavigationShowsAndOpensOnlyTheThreeMainDestinations() {
         launchDashboard().use {
-            onView(withText("Starter Log")).check(doesNotExist())
-            onView(withText("Starter Progress")).check(doesNotExist())
+            onView(withId(R.id.bottom_nav_view)).check { view, noViewException ->
+                if (noViewException != null) throw noViewException
+                val menu = (view as BottomNavigationView).menu
+                assertEquals(
+                    listOf(R.id.nav_dashboard, R.id.nav_weight_loss, R.id.nav_strength_training),
+                    (0 until menu.size()).map { menu.getItem(it).itemId }
+                )
+            }
             onView(withId(R.id.nav_weight_loss)).perform(click())
             onView(withId(R.id.button_save_weight_log)).check(matches(isDisplayed()))
             onView(withId(R.id.nav_strength_training)).perform(click())
